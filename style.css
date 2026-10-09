@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #1d1d1f;
+}
+
+.nav {
+  height: 44px;
+  background: rgba(245, 245, 247, 0.8);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav a {
+  font-size: 12px;
+  color: #1d1d1f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.apple-logo {
+  font-size: 25px;
+}
+
+.hero {
+  height: 692px;
+  margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: #f5f5f7;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 5;
+  padding-top: 52px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+.hero p {
+  font-size: 28px;
+  line-height: 1.14286;
+  margin-top: 6px;
+}
+
+.buttons {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+.buttons a {
+  background: #0071e3;
+  color: white;
+  padding: 11px 21px;
+  border-radius: 980px;
+  font-size: 17px;
+  line-height: 1.17648;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttons .outline {
+  background: transparent;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+}
+
+.buttons .outline:hover {
+  background: #0071e3;
+  color: white;
+}
+
+.hero-img,
+.promo-img,
+.logo-img {
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hero-macbook {
+  background: #f5f5f7;
+}
+
+.macbook-img {
+  position: absolute;
+  width: 100%;
+  max-width: none;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 120%;
+}
+
+.hero-iphone {
+  background: #f5f5f7;
+}
+
+.iphone-img {
+  position: absolute;
+  width: 1150px;
+  max-width: none;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.ipad-img {
+  position: absolute;
+  width: 100%;
+  max-width: none;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+.promo-grid {
+  display: grid;
+  gap: 12px;
+  padding: 0 12px 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.promo {
+  height: 580px;
+  background: #f5f5f7;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 50px;
+}
+.promo.dark {
+  background: #000;
+  color: white;
+}
+.promo h2 {
+  line-height: 1.1;
+  font-weight: 600;
+  font-size: 40px;
+}
+.promo p {
+  font-size: 21px;
+  line-height: 1.2;
+  margin: 6px auto 0;
+  max-width: 430px;
+}
+
+.macbook-pro-img {
+  position: absolute;
+  width: 650px;
+  height: 400px;
+  max-width: none;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.airpods-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.promo-airpods h2,
+.promo-airpods p,
+.promo-airpods .buttons {
+  position: relative;
+  z-index: 3;
+}
+.watch-logo {
+  width: 185px;
+  margin: 0 auto 8px;
+}
+.promo-ipad-pro h2,
+.promo-ipad-pro p,
+.promo-ipad-pro .buttons {
+  position: relative;
+  z-index: 3;
+}
+.ipad-pro-img {
+  position: absolute;
+  width: 1000px;
+  max-width: none;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.promo-watch h2,
+.promo-watch p,
+.promo-watch .buttons {
+  position: relative;
+  z-index: 3;
+}
+.watch-img {
+  position: absolute;
+  width: 1000px;
+  max-width: none;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.promo-trade h2,
+.promo-trade p,
+.promo-trade .buttons {
+  position: relative;
+  z-index: 3;
+}
+
+.trade-img {
+  position: absolute;
+  width: 100%;
+  max-width: none;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.promo-card h2,
+.promo-card p,
+.promo-card .buttons {
+  position: relative;
+  z-index: 3;
+}
+
+.card-img {
+  position: absolute;
+  width: 1000px;
+  max-width: none;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+}
+.promo-airpods .buttons a {
+  background: white;
+  color: black;
+  border: 1px solid white;
+}
+.promo-airpods .buttons .outline {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.airpods-content {
+  padding-top: 300px;
+}
+.entertainment {
+  background: white;
+  padding: 44px 0 36px;
+  overflow: hidden;
+}
+
+.entertainment h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.poster-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 0 44px 18px;
+}
+
+.poster-row img {
+  width: 980px;
+  height: 520px;
+  object-fit: cover;
+  flex: 0 0 auto;
+  background: #ddd;
+}
+footer {
+  background: #f5f5f7;
+  color: #6e6e73;
+  font-size: 12px;
+  line-height: 1.33337;
+  padding: 17px 22px 21px;
+}
+
+footer > * {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footnotes {
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 11px;
+}
+
+.footnotes p {
+  margin-bottom: 9px;
+}
+
+.more-ways a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.more-ways a:hover {
+  text-decoration: underline;
+}
+.more-ways {
+  border-bottom: 1px solid #d2d2d7;
+  padding: 16px, 0, 19px;
+}
+.footer-bottom {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 16px;
+}
+.footer-column h4:first-child {
+  margin-top: 0;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.footer-column h4 {
+  color: #1d1d1f;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+.footer-column a {
+  display: block;
+  color: #424245;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.poster-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.poster-track img {
+  width: 980px;
+  height: 520px;
+  object-fit: cover;
+}
+@keyframes slide {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}
+.poster {
+  position: relative;
+  flex-shrink: 0;
+}
+.poster-content {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.stream-btn {
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.poster-content p {
+  color: white;
+  font-size: 18px;
+}
+.poster-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: slide 20s linear infinite;
+}
+.poster {
+  position: relative;
+  flex-shrink: 0;
+}
+.poster img {
+  width: 980px;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+.service-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+  width: max-content;
+}
+.service-card {
+  position: relative;
+  flex: 1;
+}
+.service-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+.service-btn {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+.service-wrapper {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.service-content {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.service-content h4 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.service-content p {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}

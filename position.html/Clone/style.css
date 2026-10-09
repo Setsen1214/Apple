@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
+  color: #222;
+}
+
+.page {
+  width: 1100px;
+  margin: auto;
+  background: white;
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-circle {
+  width: 35px;
+  height: 35px;
+  background: #00a884;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+.header input {
+  width: 250px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  background: #00a884;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 20px;
+}
+
+.login {
+  background: white;
+  color: #222;
+  border: 1px solid #ddd;
+}
+
+.hero {
+  height: 330px;
+  background: linear-gradient(
+    to right,
+    #1bb4a5 0%,
+    #1bb4a5 37%,
+    #b82323 37%,
+    #111 100%
+  );
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  color: #e8e8e8;
+}
+
+.hero button {
+  background: white;
+  color: #00a884;
+}
+
+.hero-info {
+  margin-top: 160px;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 35px 0;
+  font-size: 14px;
+}
+
+.categories button {
+  background: white;
+  color: #00a884;
+  border: 1px solid #00a884;
+}
+
+.section-title {
+  margin-top: 30px;
+}
+
+.section-title h3 {
+  margin-bottom: 5px;
+}
+
+.section-title p {
+  color: gray;
+  margin-top: 0;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-card {
+  width: 250px;
+}
+
+.course-card img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.course-card h4 {
+  font-size: 15px;
+  margin: 10px 0 5px;
+}
+
+.course-card p {
+  font-size: 13px;
+  color: gray;
+}
+
+.course-card h3 {
+  font-size: 17px;
+}
+
+.course-card span {
+  color: gray;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.instructors {
+  display: flex;
+  gap: 20px;
+}
+
+.instructor {
+  width: 250px;
+  height: 280px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+  background: #222;
+}
+
+.instructor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructor h3 {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.instructor p {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+}
+
+.discount {
+  margin-top: 60px;
+  background: linear-gradient(to right, #005bea, #00c6fb);
+  color: white;
+  border-radius: 12px;
+  padding: 35px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount input {
+  padding: 14px;
+  border: none;
+  border-radius: 20px;
+}
+
+.discount button {
+  background: #00a884;
+}
+
+.footer {
+  margin-top: 60px;
+  background: #111827;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+.footer p {
+  color: #ccc;
+}

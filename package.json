@@ -1,15 +1,16 @@
 {
   "name": "lesson",
   "version": "1.0.0",
-  "main": "server.js",
+  "private": true,
   "scripts": {
-    "dev": "node server.js"
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^4.19.2"
+  "description": "Static portfolio site",
+  "devDependencies": {
+    "serve": "^14.2.4"
   }
 }
